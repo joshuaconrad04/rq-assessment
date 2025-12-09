@@ -4,7 +4,8 @@ import java.time.Instant;
 import java.util.UUID;
 
 /**
- * Every abstraction of an Employee should, at the bare minimum, implement this interface. Consider this a binding
+ * Every abstraction of an Employee should, at the bare minimum, implement this
+ * interface. Consider this a binding
  * contract for the domain model of an Employee.
  */
 public interface Employee {
@@ -13,6 +14,7 @@ public interface Employee {
 
     /**
      * Set by either the Service or Data layer.
+     *
      * @param uuid required non-null
      */
     void setUuid(UUID uuid);
@@ -51,6 +53,7 @@ public interface Employee {
 
     /**
      * Nullable.
+     *
      * @return null, if Employee has not been terminated.
      */
     Instant getContractTerminationDate();
